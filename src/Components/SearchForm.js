@@ -5,7 +5,7 @@ export default class SearchForm extends Component {
   
   
   onSearchChange = e => {
-    this.setState({ searchText: e.target.value });
+   
     this.props.search(this.query.value)
   }
 

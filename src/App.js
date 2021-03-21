@@ -14,12 +14,12 @@ export default class App extends Component {
   } 
 
 componentDidMount() {
-  
+  this.performSearch()
 
 }
 
-performSearch = (query) => {
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=45&api_key=dc6zaTOxFJmzC`)
+performSearch = (query = 'forest') => {
+    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
     .then(response => {
         this.setState({ gifs: response.data.data })
     })
