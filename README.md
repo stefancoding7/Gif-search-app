@@ -14,6 +14,8 @@ npm install
 
 Install `package.json` dependecies.
 
+2.
+
 ```javascript
 npm start
 ```
